@@ -2,6 +2,7 @@ import '../common/lib';
 import App from '../component/App';
 import BrowserNav from '../component/mainNav';
 import LoginGroup from '../component/inputGroup';
+import mainHeaderNav from '../component/mainHeaderNav';
 import ReactDOM from 'react-dom';
 import React from 'react';   
 
@@ -21,8 +22,10 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 // colocate the entire config).
 ReactDOM.render(
   <Router history={browserHistory}>
-    <Route component={LoginGroup} path="/" />
+    <Route component={mainHeaderNav} path="/">
+    	<Route component={LoginGroup} path="signIn" />
+    </Route>
     <Route path="Nav" component={BrowserNav}>
-      <Route path="datePicker" component={App} />
+      	<Route path="datePicker" component={App} />
     </Route>
   </Router>, document.getElementById('react-content'))

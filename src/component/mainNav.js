@@ -2,15 +2,21 @@
 import React from 'react';
 import { Menu, Breadcrumb, Icon } from 'antd';
 import {Link} from 'react-router';
+import '../styleCss/mycss.css';
 
 const SubMenu = Menu.SubMenu;
 
 const BrowserDemo = React.createClass({
+  imgHandleClick(){
+    this.props.history.pushState(null,"/");
+  },
 //class Calendar extends React.Component{}
   render() {
     return <div className="ant-layout-aside">
       <aside className="ant-layout-sider">
-        <div className="ant-layout-logo"></div>
+        <div onClick={this.imgHandleClick}>
+          <img className="mainNavLogo" src="../src/image/logo.png"></img>
+        </div>
         <Menu mode="inline" theme="dark"
           defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']}>
           <SubMenu key="sub1" title={<span><Icon type="user" />导航一</span>}>

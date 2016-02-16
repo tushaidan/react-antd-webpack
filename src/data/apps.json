@@ -1,0 +1,45 @@
+{
+	"meta": { },
+	"applications": [
+		{
+			"id": "app1",
+			"systemCode": "syscode01",
+			"time": 1417570280000,
+			"name": "营销系统",
+			"status": 1,
+			"apdex_t":0.5
+		},
+		{
+			"id": "app2",
+			"systemCode": "syscode02",
+			"time": 1417570421000,
+			"name": "ERP",
+			"status": 1,
+			"apdex_t":5
+		},
+		{
+			"id": "app3",
+			"systemCode": "syscode02",
+			"time": 1417570421000,
+			"name": "OA系统",
+			"status": 1,
+			"apdex_t":9
+		},
+		{
+			"id": "app4",
+			"systemCode": "syscode02",
+			"time": 1417570421000,
+			"name": "外网网站",
+			"status": 1,
+			"apdex_t":6
+		},
+		{
+			"id": "app5",
+			"systemCode": "syscode02",
+			"time": 1417570421000,
+			"name": "PDM系统",
+			"status": 1,
+			"apdex_t":3
+		}
+	]
+}

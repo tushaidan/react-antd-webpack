@@ -13,7 +13,7 @@ import React from 'react';
 // 	</div>, document.getElementById('react-content')	
 // );
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, browserHistory,createHashHistory } from 'react-router'
 
 
 
@@ -21,7 +21,7 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 // instead, all you really need is a single root route, you don't need to
 // colocate the entire config).
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={createHashHistory}>
     <Route component={mainHeaderNav} path="/">
     	<Route component={LoginGroup} path="signIn" />
     </Route>

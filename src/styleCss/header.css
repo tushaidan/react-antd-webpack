@@ -12,6 +12,7 @@
   width:100%;
   height: 65px;
   position:fixed;
+  z-index: 9999;
 }
 
 .ant-layout-top .ant-layout-logo {
@@ -51,8 +52,4 @@
 
 .mainHeaderNavLogo{
   margin-top: 17px;
-}
-
-.ant-carousel .ant-carousel-vertical{
-  width: 95% !important;
 }
